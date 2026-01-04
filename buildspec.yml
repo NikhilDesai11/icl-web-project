@@ -20,5 +20,12 @@ phases:
       - mvn package -s settings.xml
 artifacts:
   files:
+<<<<<<< HEAD
     - target/*.war
   discard-paths: no
+=======
+    - target/icl-web-project.war
+    - appspec.yml
+    - scripts/**/*
+  discard-paths: no
+>>>>>>> 3b1dfa5 (Adding CodeDeploy files)
