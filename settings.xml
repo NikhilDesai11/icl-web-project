@@ -1,0 +1,33 @@
+<settings>
+<servers>
+  <server>
+    <id>icl-icl-devops-cicd</id>
+    <username>aws</username>
+    <password>${env.CODEARTIFACT_AUTH_TOKEN}</password>
+  </server>
+</servers>
+
+<profiles>
+  <profile>
+    <id>icl-icl-devops-cicd</id>
+    <activation>
+      <activeByDefault>true</activeByDefault>
+    </activation>
+    <repositories>
+      <repository>
+        <id>icl-icl-devops-cicd</id>
+        <url>https://icl-576889398780.d.codeartifact.ap-south-1.amazonaws.com/maven/icl-devops-cicd/</url>
+      </repository>
+    </repositories>
+  </profile>
+</profiles>
+
+<mirrors>
+  <mirror>
+    <id>icl-icl-devops-cicd</id>
+    <name>icl-icl-devops-cicd</name>
+    <url>https://icl-576889398780.d.codeartifact.ap-south-1.amazonaws.com/maven/icl-devops-cicd/</url>
+    <mirrorOf>*</mirrorOf>
+  </mirror>
+</mirrors>
+</settings>
