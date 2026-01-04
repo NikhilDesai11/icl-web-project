@@ -18,14 +18,10 @@ phases:
       - echo Build completed on `date`
       - echo Packaging artifacts...
       - mvn package -s settings.xml
+
 artifacts:
   files:
-<<<<<<< HEAD
-    - target/*.war
-  discard-paths: no
-=======
-    - target/icl-web-project.war
+    - target/nextwork-web-project.war
     - appspec.yml
     - scripts/**/*
   discard-paths: no
->>>>>>> 3b1dfa5 (Adding CodeDeploy files)
