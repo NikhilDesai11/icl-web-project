@@ -21,7 +21,7 @@ phases:
 
 artifacts:
   files:
-    - target/nextwork-web-project.war
+    - target/icl-web-project.war
     - appspec.yml
     - scripts/**/*
   discard-paths: no
